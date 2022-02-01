@@ -1,0 +1,639 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Viga&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "PostNoBills";
+  src: url("/fonts/PostNoBillsJaffna-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.wrapper .conteiner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .conteiner .head {
+  width: 100%;
+  height: 40px;
+  color: #969696;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "PT Sans";
+  font-size: 15px;
+}
+.wrapper .conteiner .head .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrapper .conteiner .head .number .iconPhone {
+  padding-right: 5px;
+}
+.wrapper .conteiner .head .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrapper .conteiner .head .login .iconLogin {
+  padding-right: 5px;
+}
+.wrapper .conteiner .hover {
+  height: 80px;
+  text-transform: uppercase;
+  background: #0F0F0F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .hover .titleHover {
+  padding: 0 0 0 200px;
+  font-family: "PostNoBills";
+  color: white;
+  font-size: 30px;
+}
+.wrapper .conteiner .hover .bodyHover {
+  padding: 0 200px 0 0;
+}
+.wrapper .conteiner .hover .bodyHover i {
+  color: white;
+  margin-left: 20px;
+}
+.wrapper .conteiner .hover .bodyHover button {
+  color: #969696;
+  font-size: 15px;
+  height: 80px;
+  width: 136px;
+  background: #0F0F0F;
+}
+.wrapper .conteiner .hover .bodyHover button :hover {
+  background: #1F1F1F;
+}
+.wrapper .conteiner .bodyPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #18b5a4 url("/img/Rectangle 3.png") 0 0/100% 100% no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .conteiner .bodyPage .imageTitleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  height: 320px;
+  border: 4px solid white;
+  color: white;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .conteiner .bodyPage .imageTitleBlock .imgTitleName {
+  font-family: "PostNoBills";
+  font-size: 60px;
+  border-bottom: 3px solid white;
+}
+.wrapper .conteiner .bodyPage .imageTitleBlock .imgTitleAdress {
+  margin-top: 10px;
+  font-size: 21px;
+  font-family: "PT Sans";
+}
+.wrapper .conteiner .bodyPage .imageTextBlock {
+  padding-top: 50px;
+  color: white;
+  width: 730px;
+  font-size: 21px;
+  font-family: "PT Sans";
+  text-align: center;
+}
+.wrapper .conteiner .mag {
+  height: 200px;
+  width: 100%;
+  background: black;
+}
+.wrapper .conteiner .collectionConteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  background: black;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock p {
+  padding: 10% 0 0 0;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10% 0 0 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsBlock .itemColletcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 220px;
+  width: 170px;
+  background-color: #191B1C;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsBlock .itemColletcion .itemImg {
+  height: 160px;
+  width: 170px;
+  background: url("/img/item.png") 0 0/auto 100% no-repeat;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsNameBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsNameBlock .itemText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsNameBlock .itemText .nameCount {
+  font-size: 16px;
+}
+.wrapper .conteiner .collectionConteiner .seasonBlock .itemsNameBlock .itemText .priceCount {
+  font-size: 13px;
+}
+.wrapper .conteiner .collectionConteiner .collectionBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 50%;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  background: url("/img/manColl.png") 0 0/100% auto no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .collectionConteiner .collectionBlock #newColl {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  padding: 45% 0 0 0;
+  font-size: 45px;
+  margin: 0 0 4px;
+}
+.wrapper .conteiner .collectionConteiner .collectionBlock #newColl::after {
+  content: "";
+  height: 1px;
+  width: 30%;
+  background: white;
+  position: absolute;
+  left: calc(60% - 25%);
+  bottom: -25px;
+}
+.wrapper .conteiner .collectionConteiner .collectionBlock .btnColl {
+  margin: 10% 0 0 0;
+  text-transform: uppercase;
+  color: white;
+  width: 150px;
+  height: 35px;
+  border: 1px solid white;
+  background: rgba(207, 104, 104, 0);
+}
+.wrapper .conteiner .jacketBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 500px;
+  width: 100%;
+}
+.wrapper .conteiner .jacketBlock .jacketItem {
+  background: url("/img/jacket.png") 0 0/auto 100% no-repeat;
+  width: 50%;
+  height: 500px;
+}
+.wrapper .conteiner .jacketBlock .collWatch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 500px;
+  background: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .jacketBlock .collWatch .oldColl {
+  display: inline-block;
+  padding: 10% 0 0 0;
+  font-size: 30px;
+  height: 150px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 4px;
+  border-bottom: 1px solid white;
+}
+.wrapper .conteiner .jacketBlock .collWatch p {
+  padding: 10% 0 0 0;
+  font-family: "Playfair Display";
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  margin: 0 70px 0 70px;
+}
+.wrapper .conteiner .jacketBlock .collWatch .btnOpen {
+  margin: 10% 0 0 0;
+  color: white;
+  text-transform: uppercase;
+  width: 250px;
+  height: 50px;
+  background: rgba(207, 104, 104, 0);
+  border: 1px solid white;
+}
+.wrapper .conteiner .newClock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1000px;
+  width: 100%;
+  background: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .newClock .titleClock {
+  padding: 60px 0 0 0;
+  font-family: "Playfair Display";
+  font-size: 30px;
+}
+.wrapper .conteiner .newClock .conteinerClock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 50px 0 0px 10%;
+}
+.wrapper .conteiner .newClock .conteinerClock .itemConteiner {
+  width: 250px;
+  height: 320px;
+  margin: 40px 10px 10px 10px;
+}
+.wrapper .conteiner .newClock .conteinerClock .itemConteiner .itemClock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 300px;
+  background: #191B1C;
+}
+.wrapper .conteiner .newClock .conteinerClock .itemConteiner .itemClock .clock {
+  width: 250px;
+  height: 320px;
+  background: url("/img/item.png") 20px 25px/80% auto no-repeat;
+}
+.wrapper .conteiner .newClock .conteinerClock .itemConteiner .namePrice p:first-child {
+  font-size: 20px;
+  padding: 10px 0 0 0;
+}
+.wrapper .conteiner .newClock .conteinerClock .itemConteiner .namePrice p:last-child {
+  font-size: 15px;
+  padding: 10px 0 0 0;
+}
+.wrapper .conteiner .brandBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 260px;
+  width: 100%;
+  background: #0F0F0F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .conteiner .brandBlock .titleBrand {
+  padding: 50px 0 0 0;
+  color: white;
+  font-family: "Playfair Display";
+  font-size: 35px;
+}
+.wrapper .conteiner .brandBlock .brandsIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 200px;
+  margin: 40px 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .conteiner .brandBlock .brandsIcon .itemBrand {
+  height: 100px;
+  width: 220px;
+  background: url("/img/brand.png") 0 0/100% auto no-repeat;
+}
+.wrapper .conteiner .aboutShopConteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  height: 280px;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: url("/img/about.png") 0 0/100% auto no-repeat;
+}
+.wrapper .conteiner .aboutShopConteiner .about {
+  padding: 40px 0 0 0;
+  width: 350px;
+}
+.wrapper .conteiner .aboutShopConteiner .about .titleAbout {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-size: 26px;
+}
+.wrapper .conteiner .aboutShopConteiner .about .bodyAbout {
+  padding: 25px 0 0 0;
+  font-family: "PT Sans";
+  font-size: 16px;
+}
+.wrapper .conteiner .aboutShopConteiner .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0 0 0;
+}
+.wrapper .conteiner .aboutShopConteiner .categories .titleCat {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-size: 26px;
+}
+.wrapper .conteiner .aboutShopConteiner .categories .btnsCat {
+  width: 220px;
+  padding: 25px 0 0 0;
+}
+.wrapper .conteiner .aboutShopConteiner .categories .btnsCat button {
+  background: #0F0F0F;
+  color: white;
+  margin: 5px 3px 5px 3px;
+  height: 41px;
+  padding: 0 10px 0 10px;
+}
+.wrapper .conteiner .aboutShopConteiner .mailing {
+  width: 400px;
+  padding: 40px 0 0 0;
+}
+.wrapper .conteiner .aboutShopConteiner .mailing .titleMailing {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-size: 26px;
+}
+.wrapper .conteiner .aboutShopConteiner .mailing .bodyMailing {
+  padding: 25px 0 0 0;
+  font-family: "PT Sans";
+  font-size: 16px;
+}
+.wrapper .conteiner .aboutShopConteiner .mailing .formArea {
+  padding: 20px 0 0 0;
+}
+.wrapper .conteiner .aboutShopConteiner .mailing .formArea #email {
+  height: 35px;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.wrapper .conteiner .aboutShopConteiner .mailing .formArea .submitForm {
+  color: white;
+  background: #0F0F0F;
+  width: 145px;
+  height: 35px;
+}
+.wrapper .conteiner .ending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background: black;
+  color: #D0D0D0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 100px;
+}
